@@ -1,4 +1,10 @@
+import { useState } from "react";
 function HomePage() {
+  const [activeFaq, setActiveFaq] = useState<number | null>(null);
+  const toggleFaq = (index: number) => {
+    // Jika diklik yang sedang aktif, maka tutup (null). Jika beda, set index baru.
+    setActiveFaq(activeFaq === index ? null : index);
+  };
   return (
     <>
       <main className="main">
@@ -482,7 +488,11 @@ function HomePage() {
 
               <div className="col-lg-7" data-aos="fade-up" data-aos-delay="300">
                 <div className="faq-container">
-                  <div className="faq-item faq-active">
+                  <div
+                    className={`faq-item ${activeFaq === 1 ? "faq-active" : ""}`}
+                    onClick={() => toggleFaq(1)}
+                    style={{ cursor: "pointer" }}
+                  >
                     <h3>Apa itu TajwidApps Tazakka?</h3>
                     <div className="faq-content">
                       <p>
@@ -496,7 +506,11 @@ function HomePage() {
                   </div>
                   {/* <!-- End Faq item--> */}
 
-                  <div className="faq-item">
+                  <div
+                    className={`faq-item ${activeFaq === 2 ? "faq-active" : ""}`}
+                    onClick={() => toggleFaq(2)}
+                    style={{ cursor: "pointer" }}
+                  >
                     <h3>Materi apa saja yang tersedia di aplikasi ini?</h3>
                     <div className="faq-content">
                       <p>
@@ -508,8 +522,11 @@ function HomePage() {
                     <i className="faq-toggle bi bi-chevron-right"></i>
                   </div>
                   {/* <!-- End Faq item--> */}
-
-                  <div className="faq-item">
+                  <div
+                    className={`faq-item ${activeFaq === 3 ? "faq-active" : ""}`}
+                    onClick={() => toggleFaq(3)}
+                    style={{ cursor: "pointer" }}
+                  >
                     <h3>Apakah aplikasi ini bisa diakses lewat HP?</h3>
                     <div className="faq-content">
                       <p>
@@ -522,7 +539,11 @@ function HomePage() {
                   </div>
                   {/* <!-- End Faq item--> */}
 
-                  <div className="faq-item">
+                  <div
+                    className={`faq-item ${activeFaq === 4 ? "faq-active" : ""}`}
+                    onClick={() => toggleFaq(4)}
+                    style={{ cursor: "pointer" }}
+                  >
                     <h3>Apakah tersedia latihan soal?</h3>
                     <div className="faq-content">
                       <p>
@@ -535,7 +556,11 @@ function HomePage() {
                   </div>
                   {/* <!-- End Faq item--> */}
 
-                  <div className="faq-item">
+                  <div
+                    className={`faq-item ${activeFaq === 5 ? "faq-active" : ""}`}
+                    onClick={() => toggleFaq(5)}
+                    style={{ cursor: "pointer" }}
+                  >
                     <h3>Bagaimana cara menghubungi pengembang?</h3>
                     <div className="faq-content">
                       <p>
