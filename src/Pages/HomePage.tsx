@@ -585,14 +585,59 @@ function HomePage() {
           </div>
           <div className="container" data-aos="fade-up" data-aos-delay="100">
             <div className="row g-4 g-lg-5">
-              <div className="col-lg-5">
-                <div
-                  className="info-box"
-                  data-aos="fade-up"
-                  data-aos-delay="200"
-                >
+              <div class="col-lg-5">
+                <div class="info-box" data-aos="fade-up" data-aos-delay="200">
                   <h3>Informasi Kontak</h3>
-                  {/* ... isi info box ... */}
+                  <p>
+                    Silakan hubungi kami melalui salah satu saluran di bawah
+                    ini. Kami berkomitmen memberikan respon terbaik untuk
+                    membantu kelancaran proses belajar dan ibadah Anda.
+                  </p>
+
+                  <div
+                    class="info-item"
+                    data-aos="fade-up"
+                    data-aos-delay="300"
+                  >
+                    <div class="icon-box">
+                      <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div class="content">
+                      <h4>Our Location</h4>
+                      <p>A108 Adam Street</p>
+                      <p>New York, NY 535022</p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="info-item"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <div class="icon-box">
+                      <i class="bi bi-telephone"></i>
+                    </div>
+                    <div class="content">
+                      <h4>Phone Number</h4>
+                      <p>+1 5589 55488 55</p>
+                      <p>+1 6678 254445 41</p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="info-item"
+                    data-aos="fade-up"
+                    data-aos-delay="400"
+                  >
+                    <div class="icon-box">
+                      <i class="bi bi-envelope"></i>
+                    </div>
+                    <div class="content">
+                      <h4>Email Address</h4>
+                      <p>info@example.com</p>
+                      <p>contact@example.com</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 

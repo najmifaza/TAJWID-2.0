@@ -1,27 +1,30 @@
+import { Link } from "react-router";
+
 function Header() {
   return (
     <header id="header" className="header d-flex align-items-center fixed-top">
       <div className="header-container container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
-        <a
-          href="index.html"
-          className="logo d-flex align-items-center me-auto me-xl-0"
-        >
-          <img src="assets/img/logo.png" alt="" />
-          <h1 className="sitename"></h1>
-        </a>
+        <Link to="/">
+          {" "}
+          <a
+            href="index.html"
+            className="logo d-flex align-items-center me-auto me-xl-0"
+          >
+            <img src="assets/img/logo.png" alt="" />
+            <h1 className="sitename"></h1>
+          </a>
+        </Link>
 
         <nav id="navmenu" className="navmenu">
           <ul>
             <li>
-              <a href="#hero" className="active">
-                Home
-              </a>
+              <a href="/#hero">Home</a>
             </li>
             <li>
-              <a href="#kurikulum">Kurikulum</a>
+              <a href="/#kurikulum">Kurikulum</a>
             </li>
             <li>
-              <a href="#testimonials">Testimonials</a>
+              <a href="/#testimonials">Testimonials</a>
             </li>
             <li className="dropdown">
               <a href="materi-tajwid.html">
@@ -98,7 +101,7 @@ function Header() {
               </ul>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <a href="/#contact">Contact</a>
             </li>
           </ul>
           <i className="mobile-nav-toggle d-xl-none bi bi-list"></i>

@@ -5,7 +5,7 @@ import Header from "./Components/Header";
 import HomePage from "./Pages/HomePage.tsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
+import Footer from "./Components/Footer.tsx";
 function App() {
   useEffect(() => {
     AOS.init({
@@ -21,6 +21,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
       </Routes>
+      <Footer />
     </>
   );
 }
